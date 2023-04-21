@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, inicial-escale=1">
+		<title>
+			Ariana Grande
+		</title>
+		<!--Icono y hoja de diseno-->
+		<link rel="shortcut icon" href="Archivos/Imagenes/Generales/Icono.ico"/>
+		<link rel="stylesheet" type="text/css" href="Archivos/CSS/Diseno.css"/>
+	</head>
+	<body>
+		<!--Menu-->
+		<header>
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="Ariana_Grande.html">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="Archivos/Paginas/AG_Musica.html">
+							Music
+						</a>
+					</li>
+					<li>
+						<a href="Archivos/Paginas/AG_Eventos.html">
+							Events
+						</a>
+					</li>
+					<li>
+						<a href="Archivos/Paginas/AG_Mercancia.html">
+							Merch
+						</a>
+					</li>
+					<li>
+						<a href="Archivos/Paginas/AG_Fragancias.html">
+							Fragances
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--Logo-->
+		<br/> <br/> <br/>
+		<div class="logo" align="center">
+			<a href="Ariana_Grande.html">
+				<img src="Archivos/Imagenes/Generales/ArianaGrande_Logo.png" alt="Logo Ariana Grande" width="20%" height="auto"/>
+			</a>
+		</div>	
+		<br>
+		<!--Contenido-->
+			<!--Acerca de Ariana-->
+		<p>
+			Her birth name is Ariana Grande-Butera, she was born on July 26, 1993 in Boca Raton, Florida in the United States. <br/>
+			She is the second of two brothers, her older brother is Frankie J. Grande, her parents are Joan Grande and Ed Butera, they are of Italian descent. <br/>
+			She is now a worldwide recognized singer for her hits Thank U, Next, 7 Rings, Break Up With Your Girlfriend, I´m Bored, etc.
+		</p>
+			<!--Banner rotativo-->
+		<div align="center">
+			<!--Slider-->
+			<div class="slider">
+				<!--Imagenes-->
+				<a href="https://music.youtube.com/playlist?list=OLAK5uy_nHuweUcb2EA0TMSaeVWzvOtUXKKjn16Zc" target="_blank">
+					<img class="ima-slider" src="Archivos/Imagenes/Inicio/KByeForNow_Inicio.jpg" width="100%" height="auto" title="Go listen to K Bye For Now (SWT Live) live album on YouTube Music..."/>
+				</a>
+				<a href="https://music.youtube.com/playlist?list=OLAK5uy_kpYOlLUG2RIvPoNcGb6mmGw-dIyJTiAmQ" target="_blank">
+					<img class="ima-slider" src="Archivos/Imagenes/Inicio/ThankUNext_Inicio.jpg" width="100%" height="auto" title="Go listen to Thank U, Next album on YouTube Music..."/>
+				</a>
+				<a href="https://music.youtube.com/playlist?list=OLAK5uy_k36YxKan8GW_q5q4afBumq0fgO59z_jaw" target="_blank">
+					<img class="ima-slider" src="Archivos/Imagenes/Inicio/Sweetener_Inicio.jpg" width="100%" height="auto" title="Go listen to Sweetener album on YouTube Music..."/>
+				</a>
+			</div>
+			<!--Script del slider-->
+			<script>
+				var myIndex = 0;
+				carousel();
+				
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("ima-slider");
+					for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 4000); // Cambio de imágen cada 4 segundos
+				}
+			</script>
+		</div>
+		<br/>
+			<!--Albumes-->
+		<table width="100%">
+			<th colspan="5">
+				<b class="titulo-tabla">
+					Albums
+				</b>
+			</th>
+			<tr>		
+				<td>
+					<a href="https://music.youtube.com/playlist?list=OLAK5uy_kpYOlLUG2RIvPoNcGb6mmGw-dIyJTiAmQ" target="_blank">
+						<img src="Archivos/Imagenes/Inicio/Portada_ThankUNext_Inicio.jpg" class="portadas-hover" title="Go listen to Thank U, Next album on YouTube Music..."/>
+					</a>
+				</td>
+				<td>
+					<a href="https://music.youtube.com/playlist?list=OLAK5uy_k36YxKan8GW_q5q4afBumq0fgO59z_jaw" target="_blank">
+						<img src="Archivos/Imagenes/Inicio/Portada_Sweetener_Inicio.jpg" class="portadas-hover" title="Go listen to Sweetener album on YouTube Music..."/>
+					</a>
+				</td>
+				<td>
+					<a href="https://music.youtube.com/playlist?list=OLAK5uy_nAHGD99nfIIhtNf9gUq5sl8z8TBEoSo1g" target="_blank">
+						<img src="Archivos/Imagenes/Inicio/Portada_DangerousWoman_Inicio.jpg" class="portadas-hover" title="Go listen to Dangerous Woman album on YouTube Music..."/>
+					</a>
+				</td>
+				<td>
+					<a href="https://music.youtube.com/playlist?list=OLAK5uy_nbPyoqCui80e-Whaa-CF3AHafFh7bG438" target="_blank">
+						<img src="Archivos/Imagenes/Inicio/Portada_MyEverything_Inicio.jpg" class="portadas-hover" title="Go listen to My Everything album on YouTube Music..."/>
+					</a>
+				</td>
+				<td>
+					<a href="https://music.youtube.com/playlist?list=OLAK5uy_nPMX8SfgUZJ5Y3m_nwHUoJKTYRPty3OTw" target="_blank">
+						<img src="Archivos/Imagenes/Inicio/Portada_YoursTruly_Inicio.jpg" class="portadas-hover" title="Go listen to Yours Truly album on YouTube Music..."/>
+					</a>
+				</td>
+			</tr>
+		</table>
+			<!--Mini Albumes-->
+		<div align="center">
+			<table width="60%">
+				<th colspan="3">
+					<b class="titulo-tabla">
+						Mini Albums
+					</b>
+				</th>
+				<tr>		
+					<td>
+						<a href="https://music.youtube.com/playlist?list=OLAK5uy_nHuweUcb2EA0TMSaeVWzvOtUXKKjn16Zc" target="_blank">
+							<img src="Archivos/Imagenes/Inicio/Portada_KByeForNow_Inicio.jpg" class="portadas-hover" title="Go listen to K Bye For Now (SWT Live) live album on YouTube Music..."/>
+						</a>
+					</td>
+					<td>
+						<a href="https://music.youtube.com/playlist?list=OLAK5uy_mJEE-ffZ48Vb4brF-TVlc0kKTp-mpDtA8" target="_blank">
+							<img src="Archivos/Imagenes/Inicio/Portada_ChristmasAndChill_Inicio.jpg" class="portadas-hover" title="Go listen to Christmas & Chill christmas album on YouTube Music..."/>
+						</a>
+					</td>
+					<td>
+						<a href="https://music.youtube.com/playlist?list=OLAK5uy_ksvsKD1ouJiuZYmoskaZgFB17-QwMEBSs" target="_blank">
+							<img src="Archivos/Imagenes/Inicio/Portada_ChristmasKisses_Inicio.jpg" class="portadas-hover" title="Go listen to Christmas Kisses christmas album on YouTube Music..."/>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--Pie de pagina-->
+		<footer>
+			<p>
+				<b>
+					Copyright © 2020 Ariana Grande - 
+					<a href="Archivos/Paginas/AG_Contacto.php" class="link-contacto">
+						Contact us
+					</a>
+				</b>
+			</p>	
+		</footer>
+	</body>
+</html>
