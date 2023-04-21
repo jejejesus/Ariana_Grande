@@ -1,0 +1,131 @@
+
+        /*GENERAL*/
+
+/*Color de fondo y fuente*/
+body {
+	background: #FFFFFF;
+	font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0px;
+}
+.texto-blanco {
+    color: #FFFFFF;
+}
+.link {
+    font-family: Arial;
+    font-size: 17px;
+    text-decoration: none;
+    color: #000000;
+}
+.link:hover {
+    color: #D938C4;
+}
+.link-contacto {
+    text-decoration: none;
+    color: #000000;
+}
+.link-contacto:hover {
+    color: #D938C4;
+}
+.titulo-tabla {
+    font-size: 30px;
+}
+
+/*Logo*/
+.logo {
+    transform: rotate(180deg);
+}
+
+/*No seleccionable*/
+* {
+    user-select: none;
+}
+
+/*Menu*/
+header{
+	width: 100%;
+    background: #000000;
+    position: fixed;
+    font-family: Arial;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li:hover{
+	background: #3A3A3A; 
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+        /*EVENTOS*/
+
+/*Fechas*/
+.fechas {
+    width: 25%;
+    font-size: 20px;
+}
+.fechas-ciudad {
+    width: 2%;
+    text-align: right;
+    padding: 6px 0 6px 0;
+}
+.fechas-dia {
+    width: 2%;
+    text-align: center;
+    padding: 6px 0 6px 0;
+}
+.fechas-link {
+    width: 3%;
+    text-align: left;
+    padding: 6px 0 6px 0;
+}
+
+        /*MERCANCIA*/
+
+.vendido {
+    font-family: Arial;
+    text-decoration: none;
+    color: #D938C4;
+}
+.bolsas-hover:hover {
+    width: 80%;
+}
+
+        /*FRAGANCIAS*/
+
+.fragancias-hover1:hover {
+    width: 80%;
+}
+.fragancias-hover2:hover {
+    width: 95%;
+}
+
+/*Tabla perfumes*/
+td {
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+        /*MUSICA*/
+
+.portadas-hover {
+    width: 100%;
+    height: auto;
+}
+.portadas-hover:hover {
+    width: 90%;
+    height: auto;
+}
+#header-contacto {
+    background-color: #000000;
+}

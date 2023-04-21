@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, inicial-escale=1">
+		<title>
+			Ariana Grande | Music
+		</title>
+		<!--Icono y hoja de diseno-->
+		<link rel="shortcut icon" href="../Imagenes/Generales/Icono.ico"/>
+		<link rel="stylesheet" type="text/css" href="../CSS/Diseno.css"/>
+	</head>
+	<body>
+		<!--Menu-->
+		<header>
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="../../Ariana_Grande.html">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="AG_Musica.html">
+							Music
+						</a>
+					</li>
+					<li>
+						<a href="AG_Eventos.html">
+							Events
+						</a>
+					</li>
+					<li>
+						<a href="AG_Mercancia.html">
+							Merch
+						</a>
+					</li>
+					<li>
+						<a href="AG_Fragancias.html">
+							Fragances
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--Logo-->
+		<br/> <br/> <br/>
+		<div class="logo" align="center">
+			<a href="../../Ariana_Grande.html">
+				<img src="../Imagenes/Generales/ArianaGrande_Logo.png" alt="Logo Ariana Grande" width="20%" height="auto"/>
+			</a>
+		</div>
+		<br>
+		<!--Contenido-->
+			<!--Banner rotativo-->
+		<div align="center">
+			<!--Slider-->
+			<div class="slider">
+				<!--Imagenes-->
+				<a href="https://youtu.be/AoAm4om0wTs" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/RainOnMe_Musica.jpg" width="100%" height="auto" title="Go watch Rain On Me's music video ft. Lady Gaga on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/pE49WK-oNjU" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/StuckWithU_Musica.jpg" width="100%" height="auto" title="Go watch Stuck With U's music video ft. Justin Bieber on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/leopt__ATR0" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/DontCallMeAngel_Musica.jpg" width="100%" height="auto" title="Go watch Don't Call Me Angel's music video ft. Lana Del Rey and Miley Cyrus on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/9SRxBTtspYM" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/Boyfriend_Musica.jpg" width="100%" height="auto" title="Go watch Boyfriend's music video ft. Social House on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/t0pryRrJvfI" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/Monopoly_Musica.jpg" width="100%" height="auto" title="Go watch Monopoly's music video ft. Voctoria Monét on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/LH4Y1ZUUx2g" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/BreakUpWithYourGirlfriendImBored_Musica.jpg" width="100%" height="auto" title="Go watch Break Up With Your Girlfriend, I'm Bored's music video on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/QYh6mYIJG2Y" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/7Rings_Musica.jpg" width="100%" height="auto" title="Go watch 7 Rings's music video on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/gl1aHhXnN1k" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/ThankUNext_Musica.jpg" width="100%" height="auto" title="Go watch Thank U, Next's music video on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/7_rftpd0u0U" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/Imagine_Musica.jpg" width="100%" height="auto" title="Go watch Imagine's lyric video on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/kN0iD0pI3o0" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/Breathin_Musica.jpg" width="100%" height="auto" title="Go watch Breathin's music video on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/kHLHSlExFis" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/GodIsAWoman_Musica.jpg" width="100%" height="auto" title="Go watch God Is A Woman's music video on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/OQitfe8u7i4" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/TheLightIsComing_Musica.jpg" width="100%" height="auto" title="Go watch The Light Is Coming's music video ft. Nicki Minaj on YouTube..."/>
+				</a>
+				<a href="https://youtu.be/ffxKSjUwKdU" target="_blank">
+					<img class="ima-slider" src="../Imagenes/Musica/NoTearsLeftToCry_Musica.jpg" width="100%" height="auto" title="Go watch No Tears Left To Cry's music video on YouTube..."/>
+				</a>
+			</div>
+			<!--Script del slider-->
+			<script>
+				var myIndex = 0;
+				carousel();
+				
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("ima-slider");
+					for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 3000); // Cambio de imágen cada 4 segundos
+				}
+			</script>
+		</div>
+		<br/><br/>
+		<!--Canciones-->
+		<div align="center">
+			<table width="80%">
+				<th colspan="4">
+					<b class="titulo-tabla">
+						Listen to Ariana Grande on YouTube Music
+					</b>
+				</th>
+				<tr>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=tvlrveiqDhc&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_RainOnMe_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Rain On Me ft. Lady Gaga on YouTube Music..."/>
+						</a>
+					</td>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=yEA3qaB0dH8&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_StuckWithU_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Stuck With U ft. Justin Bieber on YouTube Music..."/>
+						</a>
+					</td>	
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=KHUFlha_hTs&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_DontCallMeAngel_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Don't Call Me Angel ft. Lana Del Rey and Miley Cyrus on YouTube Music..."/>
+						</a>
+					</td>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=7GOFTXLSvMI&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_Boyfriend_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Boyfriend ft. Social House on YouTube Music..."/>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=kkeT13i95Vo&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_Monopoly_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Monopoly ft. Voctoria Monét on YouTube Music..."/>
+						</a>
+					</td>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=4nbYqWVXp7Q&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_BreakUpWithYourGirlfriendImBored_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Break Up With Your Girlfriend, I'm Bored on YouTube Music..."/>
+						</a>
+					</td>		
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=XZ868t23Pb4&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_7Rings_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to 7 Rings on YouTube Music..."/>
+						</a>
+					</td>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=GftZ601-pXs&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_ThankUNext_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Thank U, Next on YouTube Music..."/>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=ZSFHOIuUl7E&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_Imagine_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Imagine on YouTube Music..."/>
+						</a>
+					</td>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=8axQACbVkrk&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_Breathin_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to Breathin on YouTube Music..."/>
+						</a>
+					</td>		
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=vpohuhgqf5w&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_GodIsAWoman_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to God Is A Woman on YouTube Music..."/>
+						</a>
+					</td>
+					<td width="25%">
+						<a href="https://music.youtube.com/watch?v=5Kme4qetSxU&feature=share" target="_blank">
+							<img src="../Imagenes/Musica/Portada_NoTearsLeftToCry_Musica.jpg" class="portadas-hover" width="100%" height="auto" title="Go listen to No Tears Left To Cry on YouTube Music..."/>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--Pie de pagina-->
+		<footer>
+			<p>
+				<b>
+					Copyright © 2020 Ariana Grande - 
+					<a href="AG_Contacto.php" class="link-contacto">
+						Contact us
+					</a>
+				</b>
+			</p>		
+		</footer>
+	</body>
+</html>

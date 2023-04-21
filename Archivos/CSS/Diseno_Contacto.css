@@ -1,0 +1,174 @@
+
+  /*GENERAL*/
+
+/*Color de fondo y fuente*/
+body {
+    background: #FFFFFF;
+    background-image: url(../Imagenes/Contacto/ArianaGrande_Contacto1.gif);
+    background-size: 100%;
+	font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0px;
+}
+.link {
+    font-family: Arial;
+    font-size: 17px;
+    text-decoration: none;
+    color: #000000;
+}
+.link:hover {
+    color: #D938C4;
+}
+.titulo-tabla {
+    font-size: 30px;
+}
+p {
+    margin-left: 50px;
+}
+
+/*Logo*/
+.logo {
+	transform: rotate(180deg);
+}
+
+/*No seleccionable*/
+* {
+    user-select: none;
+}
+
+    /*CONTACTO*/
+
+/*Encabezado*/
+header {
+    width: 30%;
+    height: auto;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 35px;
+    padding: 4px  0px 4px 0px;
+    margin: 10px auto 0px 30px;
+    border-radius: 10px 10px 0px 0px;
+    box-sizing: border-box;
+}
+
+footer {
+    color: #000000;
+}
+
+/*Contenedor*/
+.contenedor {
+    width: 30%;
+    height: auto;
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin: 0px auto 20px 30px;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+/*Formulario*/
+.formulario {
+    margin: -6px 5px 5px 5px;
+}
+
+/*Inputs*/
+#id_text_nombre_usuario, #id_text_apellido_usuario {
+    width: 45%;
+}
+#id_text_nombre_usuario {
+    margin-right: 10px;
+}#id_text_apellido_usuario {
+    margin-left: 10px;
+}
+
+input {
+    margin: 0px auto 5px auto;
+    padding: 5px;
+}
+input[type=text],[type=email] {
+    width: 95%;
+    height: auto;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+input[type=text]:hover,[type=email]:hover {
+    background: #F0F0F0;
+}
+input[type=text]:focus,[type=email]:focus {
+    background: #FFFFFF;
+    border: none;
+    border-bottom: 2px solid #4C4C4C;
+}
+input[type=submit] {
+    width: 50%;
+    height: auto;
+    margin: 10px auto auto auto;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+input[type=submit]:hover {
+    background-color: #3B3B3B;
+    border: 1px solid #3B3B3B;
+}
+input[type=submit]:disabled {
+    background-color: #3B3B3B;
+    border: 1px solid #3B3B3B;
+}
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.radio-toolbar label:hover {
+    background-color: #F0F0F0;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #BDBDBD;
+    border-radius: 20px;
+}
+
+/*Etiqueta*/
+label {
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 15px;
+    color: #000000;
+}
+button:hover {
+    color: #3B3B3B;
+}
+
+/*Alertas*/
+.alerta {
+    text-align: center;
+    margin: 5px;
+    color: #FF0000;
+}
+#alerta_1_n {
+    margin-bottom: -1px;
+}
+#alerta_1_a {
+    margin-top: -1px;
+}

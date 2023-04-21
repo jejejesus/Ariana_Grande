@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, inicial-escale=1">
+		<title>
+			Ariana Grande | Fragances
+		</title>
+		<!--Icono y hoja de diseno-->
+		<link rel="shortcut icon" href="../Imagenes/Generales/Icono.ico"/>
+		<link rel="stylesheet" type="text/css" href="../CSS/Diseno.css"/>
+	</head>
+	<body>
+		<!--Menu-->
+		<header>
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="../../Ariana_Grande.html">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="AG_Musica.html">
+							Music
+						</a>
+					</li>
+					<li>
+						<a href="AG_Eventos.html">
+							Events
+						</a>
+					</li>
+					<li>
+						<a href="AG_Mercancia.html">
+							Merch
+						</a>
+					</li>
+					<li>
+						<a href="AG_Fragancias.html">
+							Fragances
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--Logo-->
+		<br/> <br/> <br/>
+		<div class="logo" align="center">
+			<a href="../../Ariana_Grande.html">
+				<img src="../Imagenes/Generales/ArianaGrande_Logo.png" alt="Logo Ariana Grande" width="20%" height="auto"/>
+			</a>
+		</div>
+		<br />
+		<!--Contenido-->
+			<!--Banner rotativo-->
+		<div align="center">
+			<!--Slider-->
+			<div class="slider">
+				<!--Imagenes-->
+				<a href="AG_Error404.html">
+					<img class="ima-slider" src="../Imagenes/Fragancias/ThankUNext_Fragancias.png" width="100%" height="auto" title="Get Thank U, Next Fragance..."/>
+				</a>
+				<a href="AG_Error404.html">
+					<img class="ima-slider" src="../Imagenes/Fragancias/Cloud_Fragancias.png" width="100%" height="auto" title="Get Cloud Fragance..."/>
+				</a>
+				<a href="AG_Error404.html">
+					<img class="ima-slider" src="../Imagenes/Fragancias/SweetLikeCandy_Fragancias.png" width="100%" height="auto" title="Get Sweet Like Candy Fragance..."/>
+				</a>
+				<a href="AG_Error404.html">
+					<img class="ima-slider" src="../Imagenes/Fragancias/Ari_Fragancias.png" width="100%" height="auto" title="Get Ary by Ariana Grande Fragance..."/>
+				</a>
+			</div>
+			<!--Script del slider-->
+			<script>
+				var myIndex = 0;
+				carousel();
+				
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("ima-slider");
+					for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 4000); // Cambio de imágen cada 4 segundos
+				}
+			</script>
+		</div>
+    	<br/>
+			<!--Fragancias-->
+		<table>
+			<th colspan="5">
+				<b class="titulo-tabla">
+					Fragances
+				</b>
+			</th>
+			<tr>		
+				<td>
+					<a href="AG_Error404.html">
+						<img src="../Imagenes/Fragancias/TUNBote_Fragancias.png" class="fragancias-hover1" title="Get Thank U, Next Fragance..." width="85%" height="auto"/>
+					</a>
+				</td>
+				<td>
+					<a href="AG_Error404.html">
+						<img src="../Imagenes/Fragancias/CBote_Fragancias.png" class="fragancias-hover1" title="Get Cloud Fragance..." width="85%" height="auto"/>
+					</a>
+				</td>
+				<td>
+					<a href="AG_Error404.html">
+						<img src="../Imagenes/Fragancias/SLCBote_Fragancias.png" class="fragancias-hover2" title="Get Sweet Like Candy Fragance..." width="100%" height="auto"/>
+					</a>
+				</td>
+				<td>
+					<a href="AG_Error404.html">
+						<img src="../Imagenes/Fragancias/ABote_Fragancias.png" class="fragancias-hover2" title="Get Ari by Ariana Grande Fragance..." width="100%" height="auto"/>
+					</a>
+				</td>
+				<td>
+					<a href="AG_Error404.html">
+						<img src="../Imagenes/Fragancias/MBote_Fragancias.png" class="fragancias-hover2" title="Get Moonlight Fragance..." width="
+						100%" height="auto"/>
+					</a>
+				</td>
+			</tr>
+			<tr>		
+				<td title="Get Thank U, Next Fragance...">
+					<a href="AG_Error404.html" class="link">
+						<b>
+							From $42.00
+						</b>
+					</a>
+				</td>
+				<td title="Get Cloud Fragance...">
+					<a href="AG_Error404.html" class="link">
+						<b>
+							From $42.00
+						</b>
+					</a>
+				</td>
+				<td title="Get Sweet Like Candy Fragance...">
+					<a href="AG_Error404.html" class="link">
+						<b>
+							From $42.00
+						</b>
+					</a>
+				</td>
+				<td title="Get Ari by Ariana Grande Fragance...">
+					<a href="AG_Error404.html" class="link">
+						<b>
+							From $42.00
+						</b>
+					</a>
+				</td>
+				<td title="Get Moonlight Fragance...">
+					<a href="AG_Error404.html" class="link">
+						<b>
+							From $42.00
+						</b>
+					</a>
+				</td>
+			</tr>
+		</table>
+		<!--Pie de pagina-->
+		<footer>
+			<p>
+				<b>
+					Copyright © 2020 Ariana Grande - 
+					<a href="AG_Contacto.php" class="link-contacto">
+						Contact us
+					</a>
+				</b>
+			</p>		
+		</footer>
+	</body>
+</html>
